@@ -36,6 +36,7 @@
       const buttonClick = document
         .getElementById("button")
         .addEventListener("click", function () {
+          console.log("Button click");
           window.dataLayer.push({
             event: "cymbals_click",
             buttonId: "button",
