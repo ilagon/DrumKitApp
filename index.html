@@ -24,6 +24,24 @@
     />
   </head>
   <body>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-WZNL10LQ60");
+
+      const buttonClick = document
+        .getElementById("button")
+        .addEventListener("click", function () {
+          window.dataLayer.push({
+            event: "cymbals_click",
+            buttonId: "button",
+          });
+        });
+    </script>
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -37,8 +55,8 @@
 
     <h1 id="title">Drum 🥁 Kit</h1>
     <div class="set">
-      <button class="w drum">w</button>
-      <button class="a drum">a</button>)
+      <button id="button" class="w drum">w</button>
+      <button class="a drum">a</button>
       <button class="s drum">s</button>
       <button class="d drum">d</button>
       <button class="j drum">j</button>
