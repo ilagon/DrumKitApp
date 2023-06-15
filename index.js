@@ -75,11 +75,10 @@ function buttonAnimate(currentKey) {
 
 
 document
-    .getElementById("button")
+    .getElementById("cymbals")
     .addEventListener("click", function () {
         console.log("Button click");
         window.dataLayer.push({
             event: "cymbals_click",
-            buttonId: "button",
         });
     });
